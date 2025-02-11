@@ -20,8 +20,8 @@ class TicTacToeController:
         
         # pick ONE of the following Views
         # self.view = TicTacToeView_ASCII(self) # pass reference to self
-        self.view = TicTacToeView(self) # pass reference to self
-        # self.view = TicTacToeView_Canvas(self) # pass reference to self
+        # self.view = TicTacToeView(self) # pass reference to self
+        self.view = TicTacToeView_Canvas(self) # pass reference to self
         
 
     # tell model to process selection
