@@ -96,7 +96,7 @@ class TicTacToeView_Canvas:
     #drawO
     def drawO( self, r, c):
         over = (c * CELL_SIZE) + 13
-        down = (r * CELL_SIZE) + 13
+        down = (r * CELL_SIZE) + 1
         self.canvas.create_oval(over, down, over+CELL_SIZE-30, down+CELL_SIZE-30, outline="red", width=3, tags="O")
     
     # update status with msg
@@ -110,11 +110,6 @@ class TicTacToeView_Canvas:
         # Delete Xs & Os
         self.canvas.delete("X")
         self.canvas.delete("O")
-
-        # Delete all pieces (X and O)
-        self.canvas.delete("X")
-        self.canvas.delete("O")
-
    
     # start loop and wait for clicks
     def run(self):
